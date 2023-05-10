@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace AnimalPerspective
+namespace Polimorfismo
 {
-    public class Dogg : Animal
+    public class Dog : Animal
     {
         public override string Sound()
         {
-            return "Woof!";
+            return base.Sound() + "Woof!";
         }
     }
-
 }
