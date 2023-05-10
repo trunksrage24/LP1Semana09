@@ -1,12 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace AnimalPerspective
+namespace Polimorfismo
 {
     public class Animal
     {
-        public abstract string Sound()
+        public virtual string Sound()
+        {
+            return "Sound will be ";
+        }
     }
 }
