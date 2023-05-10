@@ -27,4 +27,13 @@ namespace AnimalPerspective
             NumberOfNipples = 6; // Assuming cats have 6 nipples
         }
     }
+
+    public class Bat : IMammal
+    {
+        public int NumberOfNipples { get; }
+        public Bat()
+        {
+            NumberOfNipples = 2; // Assuming bats have 2 nipples
+        }
+    }
 }
