@@ -17,4 +17,13 @@ namespace AnimalPerspective
             NumberOfWings = 2; // Bats have 2 wings
         }
     }
+    
+    public class Bee : ICanFly
+    {
+        public int NumberOfWings { get; }
+        public Bee()
+        {
+            NumberOfWings = 4; // Bees have 4 wings
+        }
+    }
 }
