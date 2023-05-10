@@ -9,4 +9,12 @@ namespace AnimalPerspective
     {
         int NumberOfNipples { get; }
     }
+    public class Dog : IMammal
+    {
+        public int NumberOfNipples { get; }
+        public Dog()
+        {
+            NumberOfNipples = 8; // Assuming dogs have 8 nipples
+        }
+    }
 }
