@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
@@ -30,7 +31,8 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         {
             // Initialize the player list with two players using collection
             // initialization syntax
-            playerList = new List<Player>() {
+            playerList = new List<Player>()
+            {
                 new Player("Best player ever", 100),
                 new Player("An even better player", 500)
             };
@@ -125,16 +127,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         }
 
         /// <summary>
-        /// Show all players with a score higher than a user-specified value.
-        /// </summary>
-        private void ListPlayersWithScoreGreaterThan()
-        {
-            Console.WriteLine("What's the min score?");
-            int minScore = int.Parse(Console.ReadLine());
-            ListPlayers(GetPlayersWithScoreGreaterThan(minScore)) ;
-        }
-
-        /// <summary>
         /// Get players with a score higher than a given value.
         /// </summary>
         /// <param name="minScore">Minimum score players should have.</param>
@@ -152,6 +144,16 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
                 }
             }
             return (playersWithScore);
+        }
+
+        /// <summary>
+        /// Show all players with a score higher than a user-specified value.
+        /// </summary>
+        private void ListPlayersWithScoreGreaterThan()
+        {
+            Console.WriteLine("What's the min score?");
+            int minScore = int.Parse(Console.ReadLine());
+            ListPlayers(GetPlayersWithScoreGreaterThan(minScore)) ;
         }
     }
 }
